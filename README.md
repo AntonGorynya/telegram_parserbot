@@ -13,7 +13,7 @@ TG_BOT_TOKEN='token::1234'
 HELPER='@tg_user'
 KEY_PHRASES=починка,ремонт,починить,не работает,сломалось
 ```
-
+Токены для Телеграм ботов вы можете получить https://telegram.me/BotFather
 
 ### Пример запуска
 
