@@ -1,4 +1,3 @@
-
 import logging
 from typing import Optional, Tuple
 
@@ -58,12 +57,12 @@ async def greet_chat_members(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
     if not was_member and is_member:
         await update.effective_chat.send_message(
-            f"{member_name} was added by {cause_name}. Welcome!",
+            f"Пользователь {member_name} был добавлен {cause_name}. Поприветствуем нового участника!",
             parse_mode=ParseMode.HTML,
         )
     elif was_member and not is_member:
         await update.effective_chat.send_message(
-            f"{member_name} is no longer with us. Thanks a lot, {cause_name} ...",
+            f"{member_name} больше не с нами. Спасибо, {cause_name} ...",
             parse_mode=ParseMode.HTML,
         )
 
